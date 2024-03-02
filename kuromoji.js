@@ -9,7 +9,7 @@ export const kuromoji = {
   },
   dictionaryBuilder: function () {
       return new DictionaryBuilder();
-  }
+  },
   createTokenizer: async () => {
     return new Promise((resolve, reject) => {
       kuromoji.builder({ dicPath: DIC_URL }).build((err, tokenizer) => {
